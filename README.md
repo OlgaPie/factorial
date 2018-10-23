@@ -1,7 +1,7 @@
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
-##Finding trailing zeros in the factorial of a number:
+## Finding trailing zeros in the factorial of a number:
 
 First of all as we know factorial of n may be defined as the product of all numbers from 1 to n.
 
@@ -9,7 +9,7 @@ First of all as we know factorial of n may be defined as the product of all numb
 That is, n! = 1*2*3*...*(n-2)*(n-1)*n
 ```
 
-###Points to consider:
+### Points to consider:
 
 1. Trailing zeros means, we have to find the number of zeros at the end of the final product.
 2. The simplest way a zero or a 10 be formed is by multiplying 2 and 5 (As here both 2 and 5s are prime).
