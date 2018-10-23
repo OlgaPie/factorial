@@ -1,0 +1,1 @@
+FactorialTrailingZeroes allows you to calculate the number of zeros at the end of the factorial.
