@@ -8,17 +8,10 @@ public class FactorialTrailingZerosTest {
 
     @Test
     public void calculationTrailingZerosTest() {
-        int zero1 = FactorialTrailingZeros.calculationTrailingZeros("101000");
-        int zero2 = FactorialTrailingZeros.calculationTrailingZeros("101002000000000000000000000000000");
-        Assert.assertEquals(3, zero1);
-        Assert.assertEquals(27, zero2);
+        int zero1 = FactorialTrailingZeros.calculationTrailingZeros(10000);
+        int zero2 = FactorialTrailingZeros.calculationTrailingZeros(10000000);
+        Assert.assertEquals(2499, zero1);
+        Assert.assertEquals(2499999, zero2);
     }
 
-    @Test
-    public void calculationFactorialTest() {
-        String fact1 = FactorialTrailingZeros.calculationFactorial(3);
-        String fact2 = FactorialTrailingZeros.calculationFactorial(12);
-        Assert.assertEquals("6", fact1);
-        Assert.assertEquals("479001600", fact2);
-    }
 }

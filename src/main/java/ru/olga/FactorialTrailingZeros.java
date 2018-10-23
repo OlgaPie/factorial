@@ -1,6 +1,5 @@
 package main.java.ru.olga;
 
-import java.math.BigInteger;
 import java.util.Scanner;
 
 public class FactorialTrailingZeros {
@@ -8,29 +7,26 @@ public class FactorialTrailingZeros {
         Scanner s = new Scanner(System.in);
         System.out.print("Enter a number: ");
         int n = s.nextInt();
-        String fact = calculationFactorial(n);
-        System.out.println("0's at the end: " + calculationTrailingZeros(fact));
+        System.out.println("0's at the end: " + calculationTrailingZeros(n));
     }
 
-    public static int calculationTrailingZeros(String fact) {
-        StringBuilder reverse = new StringBuilder(fact).reverse();
+    /**
+     * Method to count the number of zeros at the end of factorial.
+     * <p>
+     * Number of zero at the end factorial is found by formula:
+     * n/5+n/5^2••••••• till 5^k is less than or equal to n
+     *
+     * @param n non-negative integer value
+     * @return number of zeros at the end of factorial
+     */
+
+    public static int calculationTrailingZeros(int n) {
         int zeros = 0;
-        for (int i = 0; i < reverse.length() - 1; i++) {
-            if (reverse.charAt(i) == '0') {
-                zeros++;
-            } else {
-                break;
-            }
+        while (n != 0) {
+            zeros += n / 5;
+            n /= 5;
         }
         return zeros;
-    }
-
-    public static String calculationFactorial(int n) {
-        BigInteger fact = new BigInteger("1");
-        for (int i = 1; i <= n; i++) {
-            fact = fact.multiply(new BigInteger(i + ""));
-        }
-        return fact.toString();
     }
 
 }
