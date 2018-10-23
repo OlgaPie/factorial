@@ -1,3 +1,6 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
 ##Finding trailing zeros in the factorial of a number:
 
 First of all as we know factorial of n may be defined as the product of all numbers from 1 to n.
